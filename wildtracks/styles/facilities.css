@@ -1,0 +1,278 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Lora",sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Cabin", serif;
+    line-height: 1.5;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  @keyframes slideshow {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    20% { opacity: 1; }
+    30% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+
+  .center {
+    height: 170px;
+  }
+  
+  .center h1 {
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .center h2 {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .center {
+      height: auto;
+    }
+  
+    .center h1 {
+      margin-left: 50px;
+    }
+  
+    .center h2 {
+      margin-left: 40px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .center h1,
+    .center h2 {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+
+.menu{
+    width: 100%;
+    height: 520px;
+}
+
+.title{
+    margin-left: 400px;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.colour{
+    font-size: 32px;
+    margin-left: 200px;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+
+.colour1{
+    font-size: 32px;
+    margin-left: 800px;
+    margin-top: -320px;
+    font-weight: bolder;
+}
+
+@media (min-width: 1010px) {
+    .menu {
+      height: 520px;
+    }
+  
+    .title {
+      margin-left: 400px;
+    }
+  
+    .colour {
+      margin-left: 200px;
+    }
+  
+    .colour1 {
+      margin-left: 800px;
+      margin-top: -320px;
+    }
+  }
+  
+  @media (max-width: 1009px) {
+    .menu {
+      height: 520px;
+    }
+  
+    .title,
+    .colour,
+    .colour1 {
+      margin-left: 200px;
+    }
+  }
+
+  .box-cointainer{
+    width: 100%;
+    height: 200px;
+    display:flex;
+   justify-content: space-around;
+  }
+
+.box1{
+    width: 20%;
+    height: 200px;
+    background: url(../img/12.jpeg);
+    background-size: cover;
+    
+  }
+
+.box2{
+    width: 20%;
+    height: 200px;
+    background: url(../img/13.jpeg);
+    background-size: cover;
+    
+  } 
+
+.box3{
+    width: 20%;
+    height: 200px;
+    background: url(../img/14.jpeg);
+    background-size: cover;
+    
+  }
+
+.box4{
+    width: 20%;
+    height: 200px;
+    background: url(../img/15.jpeg);
+    background-size: cover;
+    
+  }
+
+.box5{
+    width: 20%;
+    height: 200px;
+    background: url(../img/16.jpeg);
+    background-size: cover;
+    
+  }
+
+.box-content{
+    width: 100%;
+    height: 200px;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 0;
+  }
+
+.box6{
+    width: 28%;
+    height: 200px;
+    background: url(../img/17.jpeg);
+    background-size: cover;
+    
+  }
+
+.box8{
+    width: 56%;
+    height: 200px;
+    font-size: 65px;
+    font-weight: bold;
+    justify-items: center;
+    margin-top: 65px;
+    margin-left: 100px;
+  }
+
+.box10{
+    width: 28%;
+    height: 200px;
+    background: url(../img/18.jpeg);
+    background-size: cover;
+    
+  }
+
+  .box-content1{
+    width: 100%;
+    height: 200px;
+    display:flex;
+    justify-content: right;
+    margin-top: 0;
+  }
+
+.box11{
+    width: 20%;
+    height: 200px;
+    background: url(../img/5.jpeg);
+    background-size: cover;
+    
+  }
+
+.box12{
+    width: 20%;
+    height: 200px;
+    background: url(../img/4.jpeg);
+    background-size: cover;
+    
+  } 
+
+.box13{
+    width: 20%;
+    height: 200px;
+    background: url(../img/3.jpeg);
+    background-size: cover;
+    
+  }
+
+.box14{
+    width: 20%;
+    height: 200px;
+    background: url(../img/2.jpeg);
+    background-size: cover;
+    
+  }
+
+.box15{
+    width: 20%;
+    height: 200px;
+    background: url(../img/1.jpeg);
+    background-size: cover;
+    
+  } 
+  

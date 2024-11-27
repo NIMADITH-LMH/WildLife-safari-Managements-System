@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body{
+    line-height: 1.5;
+    font-family: 'Cabin', serif;
+}
+h1, h2, h3, h4 {
+    font-family: "Lora",sans-serif;
+}
+.careers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 64px 0;
+}
+.career-img {
+    object-fit: cover;
+}
+.careers-div1{
+    width: 45%;
+}
+.careers-div2{
+    width: 40%;
+}
+.careers-div1 img{
+    width: 100%;
+    height: 100%;
+}
+.careers-div2-box h3{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    width: min-content;
+    color: rgb(207, 135, 0);
+}
+.careers-box-underline{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgb(207, 135, 0);
+    position: relative;
+    bottom: 23px;
+}
+.careers-div2 h1{
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(207, 135, 0);
+    text-transform: uppercase;
+}
+.careers-underline{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgb(207, 135, 0);
+}
+.career-para{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(104, 104, 104);
+}
+.careers-jobs h2{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    width: 100px;
+    position: relative;
+    z-index: 10;
+    background-color: #ffffff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.careers-jobs-underline{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgb(82, 82, 82);
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 22px;
+}
+.job-p{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(104, 104, 104);
+    margin-bottom: 8px;
+}
+.careers-jobs a{
+    text-decoration: none;
+}
+.careers-jobs a:hover{
+    text-decoration:underline;
+    color: black;
+}
+.careers-jobs a:hover .job-p{
+    color: #000000;
+}
+@media screen and (max-width: 1000px){
+    .careers-div1{
+        width: 80%;
+    }
+    .careers-div2 h3{
+        margin-top: 20px;
+    }
+    .careers-div2{
+        width: 80%;
+    }
+}
+.job-form{
+    margin-top: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    width: fit-content;
+    background-color: #ffffff;
+    z-index: 10000;
+    padding-left: 2%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: -2px 0px 23px 0px rgba(64,64,64,0.75);
+    -webkit-box-shadow: -2px 0px 23px 0px rgba(64,64,64,0.75);
+    -moz-box-shadow: -2px 0px 23px 0px rgba(64,64,64,0.75);
+    opacity: 1;
+}
+.back{
+    position: sticky;
+    left: 50%;
+    transform: translateX(7%);
+}
+
+.job-form input{
+    width: 40%;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+}
+.job-form select{
+    width: calc(80% + 5px);
+    box-sizing: border-box;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #d6d6d6;
+}
+.form-file input{
+    width: calc(80% + 5px);
+}
+.job-form textarea{
+    width: calc(80% + 5px);
+    border-radius: 5px;
+    border: 1px solid #d6d6d6;
+}
+#submit{
+    background-color: orange;
+    width: calc(80% + 5px);
+    color: #ffffff;
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+    border: none;
+}
+#submit:hover{
+    background-color: rgb(216, 140, 0);
+}
+.job-form i{
+    position: relative;
+    left: 93%;
+    bottom: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+@media screen and (max-width: 900px){
+    .job-form{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 500px){
+    .job-form{
+        width: 85%;
+        background-color: #0000006b;
+    }
+}
+.form-class{
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    background-color: #0000008e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: none;
+}

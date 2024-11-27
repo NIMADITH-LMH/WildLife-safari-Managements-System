@@ -1,0 +1,254 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Lora",sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Cabin", serif;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.containerv2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+
+
+.room_details-component {
+    padding: 2rem 1rem;
+    max-width: 768px;
+    border-bottom: #cacaca solid 1px;
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.room-image {
+    width: 100%;
+}
+
+.room_type-heading {
+    display: inline-block;
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.section-1 {
+   display: flex;
+   flex-direction: column;
+}
+
+@media screen and (min-width: 780px) {
+    .section-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.book-btn {
+    font-family: inherit;
+    width: 140px;
+    height: 40px;
+    font-weight: 500;
+    background: #62472d;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.book-btn:hover {
+    background: #62472d;
+}
+
+.price {
+    display: inline-block;
+    font-family: "Lora", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #62472d;
+}
+
+.price::after {
+    content: "/Per Day";
+    font-weight: 400;
+    color: #202020;
+    font-family: "Cabin", sans-serif;
+    font-size: 1rem;
+}
+
+.room-facilities-table {
+    color: #868686;
+    text-align: left;
+}
+
+.room-facilities-table th {
+    padding: 0.5rem 1rem 0.5rem 0;
+    font-weight: 500;
+}
+
+.room-facilities-table td {
+    color: #202020;
+}
+
+.description {
+    margin-top: 1.5rem;
+    font-weight: 400;
+    color: #868686;
+    text-align: justify;
+}
+
+.availability_checking-component {
+    padding: 2rem 1rem;
+}
+
+.label {
+    display: block;
+    color: #707079;
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.input {
+    font-family: inherit;
+    display: block;
+    width: 100%;
+    outline: 0;
+    margin-bottom: 1rem;
+    height: 50px;
+    font-size: 1rem;
+    padding: 1px 2px 1px 20px;
+    border: 1px solid #ebebeb;
+    font-weight: 500;
+}
+
+.check-btn {
+    font-family: inherit;
+    width: 100%;
+    background: transparent;
+    border: #62472d solid 1px;
+    color: #62472d;
+    height: 40px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+.check-btn:hover {
+    background: #62472d;
+    color: white;
+}
+
+@media screen and (min-width: 780px) {
+    .availability_checking-component {
+        width: 330px;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+}
+
+.reviews__heading {
+    font-weight: 400;
+}
+
+.reviews {
+    display: flex;
+    margin: 1rem;
+    max-width: 768px;
+}
+
+.profile-icon {
+    object-fit: cover;
+    object-position: top;
+    width: 80px;
+    height: 80px;
+    margin: 0.25rem 1rem 0.25rem 0;
+    border-radius: 100px;
+}
+
+.review-text {
+    border-left: #cccccc solid 1px;
+    padding: 0 1.5rem;
+}
+
+.review-text span {
+    color: #62472d;
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    margin-right: 1rem;
+}
+
+.profile-name {
+    font-weight: 400;
+    margin: 0.25rem 0 0.25rem 0;
+}
+
+.review-text p {
+    color: #868686;
+}
+
+.add-reviews-component {
+    margin: 1rem 0;
+    max-width: 768px;
+}
+
+.textarea {
+    margin-top: 1rem;
+    height: 6rem;
+}
+
+.add_review-btn {
+    font-size: 1rem;
+    font-family: inherit;
+    width: 140px;
+    height: 40px;
+    font-weight: 500;
+    background: #62472d;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add_review-btn:hover {
+    background: #62472d;
+}
+
+.add-reviews-form {
+    margin-bottom: 4rem;
+}
+
+.delete_review-btn,
+.edit_review-btn {
+    font-size: 0.875rem;
+    margin: 0 0.5rem;
+    color: #202020;
+}

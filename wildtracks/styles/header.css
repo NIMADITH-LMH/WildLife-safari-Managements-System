@@ -1,0 +1,131 @@
+.icon {
+    width: 32px;
+}
+
+.icon-medium {
+    width: 64px;
+    height: 64px;
+}
+
+.btn {
+    display: inline-flex;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+
+:root {
+    --color-primary: #62472d;
+}
+
+/* Top Nav */
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    background: green;
+    padding: 1rem 2rem;
+    height: 4rem;
+    font-family: "cabin",sans-serif;
+}
+
+.top-nav-list {
+    display: none;
+    list-style-type: none;
+}
+
+.top-nav-list .list-item {
+    margin: 0 1rem;
+}
+
+.top-nav-list .list-item a {
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.top-nav-list .list-item a:hover {
+    color: white;
+}
+
+.top-nav-list .list-item .highlightbtn {
+    color: white;
+}
+
+.border {
+    padding: 0.25rem 1rem;
+    border: rgba(255, 255, 255, 0.5) solid 2px;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.border:hover {
+    color: white;
+    border: white solid 2px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.profile {
+    width: 32px;
+    margin: 0 0.5rem;
+    padding-bottom: 2px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 860px) {
+    .top-nav {
+        background: #1D3201;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .top-nav-list {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.mobile-nav {
+    width: 240px;
+    background: white;
+    min-height: 100%;
+    position: absolute;
+    right: 0;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: fixed;
+    right: -250px;
+    transition: 0.2s;
+}
+
+.popupmenu {
+    right: 0;
+}
+
+.mobile-nav .mobile-nav-list {
+    margin: 2rem;
+    list-style-type: none;
+}
+
+.mobile-nav .mobile-nav-list .list-item {
+    padding-bottom: 1rem;
+}
+
+.mobile-nav .mobile-nav-list .list-item a {
+    color: rgb(66, 66, 66);
+    font-weight: 700;
+}

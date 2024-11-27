@@ -1,0 +1,182 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Lora",sans-serif;
+    color: #222736;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Cabin", serif;
+    line-height: 1.5;
+    color: #595960;
+    background: #f8f8f8;
+    min-height: 100vh;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.profile-component {
+    display: flex;
+    min-height: 100vh;
+    padding-top: 4rem;
+}
+
+.navigation {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    border-right: #cfcfcf solid 1px;
+    background: #868686;
+}
+
+.profile-img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin: 2rem auto;
+    border: #e0e0e0 solid 4px;
+}
+
+.profile-name {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.nav-btn {
+    text-align: left;
+    color: black;
+    font-family: inherit;
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-btn:hover {
+    background: #62472d;
+    color: white;
+}
+
+.logout-btn {
+    margin-top: auto;
+}
+
+.highlight {
+    background: #62472d;
+    color: white;
+}
+
+@media screen and (max-width: 780px) {
+    .navigation {
+        width: 120px;
+    }
+    .nav-btn {
+        padding: 0.5rem;
+    }
+}
+
+.profile-content {
+    flex: 1;
+}
+
+.main__heading {
+    margin-bottom: 2rem;
+}
+
+.room-management {
+    margin: 2rem;
+}
+
+.add_room-button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 0.875rem;
+    border-radius: 4px;
+    background: #62472d;
+    color: white;
+    border: #62472d solid 1px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add_room-button:hover {
+    background: white;
+    color: #62472d;
+}
+
+.rooms_table {
+    margin: 2rem 0;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+.rooms_table tr {
+    height: 60px;
+}
+
+.rooms_table tr th {
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 0;
+    padding-right: 1rem;
+}
+
+.rooms_table tr td {
+    border-bottom: 1px solid #ddd;
+    padding: 0.75rem 0;
+    padding-right: 1rem;
+}
+
+.rooms_table tr .actions {
+    padding: 0;
+    padding-left: 4px;
+}
+
+.rooms_table tr .action-buttons {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.rooms_table .btn {
+    width: 60px;
+    height: 36px;
+    margin: 0 0.25rem;
+    justify-content: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 0.875rem;
+    border-radius: 4px;
+    background: #62472d;
+    color: white;
+    border: #62472d solid 1px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 0.25rem;
+}
+
+.rooms_table .btn:hover {
+    background: white;
+    color: #62472d;
+}

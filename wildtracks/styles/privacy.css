@@ -1,0 +1,53 @@
+/* Resetting default margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling for the body */
+body {
+  line-height: 1.5;
+  font-family: 'Cabin', serif;
+  background-color: #f1f5ef; /
+}
+
+/* Styling for headings */
+h1, h2, h3, h4 {
+  font-family: "Lora", sans-serif;
+}
+
+/* Styling for the title section */
+.title {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+/* Styling for the title heading */
+.title h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 35px;
+  color: #333; 
+}
+
+/* Styling for the main privacy image section */
+.maine-privacy-image {
+  width: 100%;
+  height: 340px;
+  background-color: #007bff; 
+  background-image: url(../img/privacy.jpg); /* Image background */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 40%; 
+  box-shadow:rgb(6, 0, 0);
+}
+
+/* Styling for the heading inside the main privacy image */
+.maine-privacy-image h1 {
+  position: relative;
+  top: 50%; 
+  transform: translateY(-50%);
+  color: #fff; 
+  text-align: center;
+}
