@@ -200,10 +200,6 @@ Contributions to improve WildTracks are welcome! Here's how you can contribute:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ---
 
 © 2025 WildTracks Safari Management System. All Rights Reserved.
